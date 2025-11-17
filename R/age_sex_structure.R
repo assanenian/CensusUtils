@@ -8,14 +8,14 @@
 #'
 #' @param df a dataframe containing count of people by agegroup, sex and distributed across administrative units
 #' @param choice specify whether a national pyramid or regional pyramids are created
-#' @param out folder where the pyramids will be saved
+#' @param output_dir folder where the pyramids will be saved
 #' @param ...
 #'
 #' @returns
 #' @export
 #'
 #' @examples
-age_sex_structure <- function(df,choice="national",out,...){
+age_sex_structure <- function(df,choice="national",output_dir,...){
 
   if(!dir.exists(output_dir)){
     dir.create(output_dir, recursive = TRUE)
